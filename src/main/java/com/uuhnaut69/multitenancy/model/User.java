@@ -4,11 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.UUID;
 
 @Data
+@Entity
 @NoArgsConstructor
 @AllArgsConstructor
 public class User implements Serializable {
@@ -17,5 +19,7 @@ public class User implements Serializable {
     private UUID id;
 
     private String userName;
+
+    private String region;
 
 }
