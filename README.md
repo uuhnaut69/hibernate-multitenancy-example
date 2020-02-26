@@ -3,6 +3,12 @@
 - Multitenancy is an architectural pattern which allows you to isolate customers even if they are using the same hardware or software components. Multitenancy has become even more attractive with the widespread adoption of cloud computing.
 - Catalog -> Schema -> Table.
 
+- Hibernate provide an implementation of these two interfaces:
+
+  - MultiTenantConnectionProvider – provides connections per tenant.
+
+  - CurrentTenantIdentifierResolver – resolves the tenant identifier to use.
+  
 # Strategy approaches:
 
 **1. Catalog-based multitenancy**
