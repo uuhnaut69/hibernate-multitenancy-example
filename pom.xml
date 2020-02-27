@@ -4,8 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>core</module>
-        <module>table-based</module>
         <module>web</module>
+        <module>master-db</module>
+        <module>security-service</module>
+        <module>tenant-service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -23,7 +25,6 @@
     <properties>
         <java.version>1.8</java.version>
         <core.version>0.0.1-SNAPSHOT</core.version>
-        <table.based.version>0.0.1-SNAPSHOT</table.based.version>
     </properties>
 
     <dependencies>
@@ -70,11 +71,6 @@
                 <groupId>com.uuhnaut69</groupId>
                 <artifactId>core</artifactId>
                 <version>${core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.uuhnaut69</groupId>
-                <artifactId>table-based</artifactId>
-                <version>${table.based.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

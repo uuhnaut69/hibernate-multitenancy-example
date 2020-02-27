@@ -22,6 +22,11 @@ public class EmployeeController {
         return employeeService.findAll();
     }
 
+    @GetMapping("/{id}")
+    public Employee findById(@PathVariable UUID id) throws Exception {
+        return employeeService.find(id);
+    }
+
     @PostMapping
     public Employee create(@RequestBody @Valid EmployeeRequest employeeRequest) {
         return employeeService.create(employeeRequest);

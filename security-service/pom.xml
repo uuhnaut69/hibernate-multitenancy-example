@@ -9,13 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>table-based</artifactId>
+    <artifactId>security-service</artifactId>
     <packaging>jar</packaging>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.uuhnaut69</groupId>
-            <artifactId>core</artifactId>
-        </dependency>
-    </dependencies>
+
 </project>
