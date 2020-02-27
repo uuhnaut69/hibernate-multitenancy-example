@@ -5,9 +5,6 @@
     <modules>
         <module>core</module>
         <module>web</module>
-        <module>master-db</module>
-        <module>security-service</module>
-        <module>tenant-service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -38,8 +35,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
         <dependency>

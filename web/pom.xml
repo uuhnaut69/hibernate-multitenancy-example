@@ -12,6 +12,13 @@
     <artifactId>web</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.uuhnaut69</groupId>
+            <artifactId>core</artifactId>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
