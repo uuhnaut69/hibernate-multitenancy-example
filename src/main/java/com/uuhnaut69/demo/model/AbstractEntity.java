@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
 @EntityListeners(AuditingEntityListener.class)
 public class AbstractEntity implements Serializable {
 
-    @Column(name = "tenantId", nullable = false, updatable = false)
+    @Column(name = "tenant_id")
     private String tenantId;
 
     @CreatedDate

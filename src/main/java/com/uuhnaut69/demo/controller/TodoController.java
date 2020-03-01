@@ -22,6 +22,11 @@ public class TodoController {
         return todoService.findAll();
     }
 
+    @GetMapping("/{id}")
+    public Todo findById(@PathVariable UUID id) throws Exception {
+        return todoService.findById(id);
+    }
+
     @PostMapping
     public Todo create(@RequestBody @Valid TodoRequest todoRequest) {
         return todoService.create(todoRequest);
