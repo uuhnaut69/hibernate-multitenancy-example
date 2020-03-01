@@ -1,4 +1,5 @@
 # Notes
+![Travis CI](https://travis-ci.com/uuhnaut69/hibernate-multitenancy-example.svg?branch=master)
 
 - Multitenancy is an architectural pattern which allows you to isolate customers even if they are using the same hardware or software components. Multitenancy has become even more attractive with the widespread adoption of cloud computing.
 - Catalog -> Schema -> Table.
