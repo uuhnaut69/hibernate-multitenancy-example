@@ -21,4 +21,8 @@ public class Todo extends AbstractEntity {
 
     @Column(nullable = false, columnDefinition = "text")
     private String name;
+
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
+    private Status status;
 }

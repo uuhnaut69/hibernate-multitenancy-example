@@ -46,8 +46,16 @@ public class TodoServiceImpl implements TodoService {
         todoRepository.delete(todo);
     }
 
+    /**
+     * Save
+     *
+     * @param todo
+     * @param todoRequest
+     * @return Todo
+     */
     private Todo save(Todo todo, TodoRequest todoRequest) {
         todo.setName(todoRequest.getName());
+        todo.setStatus(todoRequest.getStatus());
         return todoRepository.save(todo);
     }
 }
